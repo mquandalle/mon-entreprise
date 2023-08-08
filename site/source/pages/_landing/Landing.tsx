@@ -76,11 +76,11 @@ export default function Landing() {
 						justify-content: center;
 					`}
 				>
-					<SimulateurCard {...simulators.salarié} />
+					{/* <SimulateurCard {...simulators.salarié} /> */}
 
 					<SimulateurCard {...simulators['auto-entrepreneur']} />
 
-					<SimulateurCard {...simulators['comparaison-statuts']} />
+					{/* 		<SimulateurCard {...simulators['comparaison-statuts']} /> */}
 
 					<Grid
 						item

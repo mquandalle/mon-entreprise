@@ -3,7 +3,7 @@ import path from 'path'
 
 import { defineConfig } from 'vite'
 
-import { PageConfig } from '@/pages/simulateurs/_configs/types'
+import type { PageConfig } from '@/pages/simulateurs/_configs/types'
 
 import { objectTransform } from './source/utils'
 
