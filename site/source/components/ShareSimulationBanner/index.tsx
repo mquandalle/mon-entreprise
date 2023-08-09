@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
-import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 
 import { PopoverWithTrigger } from '@/design-system'
@@ -8,10 +7,6 @@ import { Button } from '@/design-system/buttons'
 import { Emoji } from '@/design-system/emoji'
 import { Grid, Spacing } from '@/design-system/layout'
 import { useCurrentSimulatorData } from '@/hooks/useCurrentSimulatorData'
-import {
-	companySituationSelector,
-	situationSelector,
-} from '@/store/selectors/simulationSelectors'
 
 import { TrackingContext } from '../ATInternetTracking'
 import { PlaceDesEntreprisesButton } from '../PlaceDesEntreprises'
@@ -20,12 +15,8 @@ import { ShareSimulationPopup } from './ShareSimulationPopup'
 
 export function useUrl() {
 	const language = useTranslation().i18n.language
-	const situation = {
-		...useSelector(situationSelector),
-		...useSelector(companySituationSelector),
-	}
 
-	const searchParams = useParamsFromSituation(situation)
+	const searchParams = useParamsFromSituation()
 	const { currentSimulatorData } = useCurrentSimulatorData()
 
 	const { path = '' } = currentSimulatorData ?? {}
