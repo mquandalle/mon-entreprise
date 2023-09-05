@@ -4580,6 +4580,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eshaz/web-worker@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@eshaz/web-worker@npm:1.2.1"
+  checksum: 515dd7d4ad28116c843e79f9092b673de5c0414739f95b095338db50d136eb912ec6a8b9e3e0ec336e8e9880a52aa2081a564a9e13dfc343c5e80b367b7c44d6
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.1.2, @eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -5228,16 +5235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@koa/cors@npm:^3.3.0":
-  version: 3.4.3
-  resolution: "@koa/cors@npm:3.4.3"
-  dependencies:
-    vary: ^1.1.2
-  checksum: 51a5b89b4ea19078272ea2702916c90375853b6cfb9b65bf7720653e99b36950c1fd90df66a77fb17839bb130dc7c9f83ccc0bcec40f9d09769f9ed77ced5f23
-  languageName: node
-  linkType: hard
-
-"@koa/cors@npm:^4.0.0":
+"@koa/cors@npm:4.0.0":
   version: 4.0.0
   resolution: "@koa/cors@npm:4.0.0"
   dependencies:
@@ -5246,20 +5244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@koa/router@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "@koa/router@npm:10.1.1"
-  dependencies:
-    debug: ^4.1.1
-    http-errors: ^1.7.3
-    koa-compose: ^4.1.0
-    methods: ^1.1.2
-    path-to-regexp: ^6.1.0
-  checksum: 3475f4235576d24eaa218d55e845fb81946288d65b87aa8aeda1a23b11b5556a02b9a8ff1ea520bb988ec7201523c41cff5abce9285fd12b9e839d7590cd2ce1
-  languageName: node
-  linkType: hard
-
-"@koa/router@npm:^12.0.0":
+"@koa/router@npm:12.0.0":
   version: 12.0.0
   resolution: "@koa/router@npm:12.0.0"
   dependencies:
@@ -6845,9 +6830,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@publicodes/api@npm:^1.0.0-beta.70":
-  version: 1.0.0-beta.70
-  resolution: "@publicodes/api@npm:1.0.0-beta.70"
+"@publicodes/api@betagouv/publicodes#head=publicodes-in-worker&workspace=@publicodes/api&v0":
+  version: 1.0.0-beta.71
+  resolution: "@publicodes/api@https://github.com/betagouv/publicodes.git#workspace=%40publicodes%2Fapi&v0=&commit=7f48993c0d3ab97b7375d33ce0d1e1fdbcb123f8"
   dependencies:
     "@koa/cors": ^3.3.0
     "@koa/router": ^10.1.1
@@ -6856,7 +6841,29 @@ __metadata:
     openapi-validator-middleware: ^3.2.6
   peerDependencies:
     publicodes: ^1.0.0-beta.47
-  checksum: 880b61acb1069d783ceb08d0ac86edf313e75c35d75e4dd2826845710e3ac5f927aace6c19c23774e1d2fb2964029117be6dcac6c5cd405746473bccfffc1d6d
+  checksum: 1d4086285bec8ca992ccbe4f90e0927dfe741cd67c424752f2c17bc1a29b55a78788b6144d56001d625d20c26defd57ffb4f2eeb123f4d1cbb9c7dd2f7327acb
+  languageName: node
+  linkType: hard
+
+"@publicodes/worker-react@betagouv/publicodes#head=publicodes-in-worker&workspace=@publicodes/worker-react&v0":
+  version: 1.0.0-beta.71
+  resolution: "@publicodes/worker-react@https://github.com/betagouv/publicodes.git#workspace=%40publicodes%2Fworker-react&v0=&commit=7f48993c0d3ab97b7375d33ce0d1e1fdbcb123f8"
+  dependencies:
+    "@publicodes/worker": ^1.0.0-beta.71
+  peerDependencies:
+    publicodes: ^1.0.0-beta.40
+    react: ^17 || ^18
+    react-dom: ^17 || ^18
+  checksum: a5071fe45594098bed605d9f7b1e175ceee445d70de5e1b1e04c7c25780e4bf95511c3792f7f5a2aea1a9384639574411f058d7f9325a8bb09cad8f5898cfd5d
+  languageName: node
+  linkType: hard
+
+"@publicodes/worker@betagouv/publicodes#head=publicodes-in-worker&workspace=@publicodes/worker&v0":
+  version: 1.0.0-beta.71
+  resolution: "@publicodes/worker@https://github.com/betagouv/publicodes.git#workspace=%40publicodes%2Fworker&v0=&commit=7f48993c0d3ab97b7375d33ce0d1e1fdbcb123f8"
+  peerDependencies:
+    publicodes: ^1.0.0-beta.40
+  checksum: 7827767ae3d122d6f5d7fa8062665da6754425583afef34248dd25fc72d5a804ff2ea98d0a37379cb61e606bef94773df0975f475892def0de64f43549d78470
   languageName: node
   linkType: hard
 
@@ -10843,15 +10850,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/formidable@npm:^2.0.4":
-  version: 2.0.6
-  resolution: "@types/formidable@npm:2.0.6"
-  dependencies:
-    "@types/node": "*"
-  checksum: d6be0ac12bf8dd2e4f8a022271ee6e501c7f6d7dd58d71c68497ca7da84bee1538d1a2a64a90b56dad557ddb291d48c5731206269e9ab53ed91264e68a4d1476
-  languageName: node
-  linkType: hard
-
 "@types/formidable@npm:^2.0.5":
   version: 2.0.5
   resolution: "@types/formidable@npm:2.0.5"
@@ -14263,18 +14261,6 @@ __metadata:
   version: 1.1.2
   resolution: "cluster-key-slot@npm:1.1.2"
   checksum: be0ad2d262502adc998597e83f9ded1b80f827f0452127c5a37b22dfca36bab8edf393f7b25bb626006fb9fb2436106939ede6d2d6ecf4229b96a47f27edd681
-  languageName: node
-  linkType: hard
-
-"co-body@npm:^5.1.1":
-  version: 5.2.0
-  resolution: "co-body@npm:5.2.0"
-  dependencies:
-    inflation: ^2.0.0
-    qs: ^6.4.0
-    raw-body: ^2.2.0
-    type-is: ^1.6.14
-  checksum: 48e1ffe00b8717b68154a939fa19f36d75aa66bba627f2977f28d11b732da56bdda445acda7053f7a85dfbac8a09a8aa257bceedaff7b6467cb25ab08ada9c8d
   languageName: node
   linkType: hard
 
@@ -21066,18 +21052,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"koa-body@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "koa-body@npm:5.0.0"
-  dependencies:
-    "@types/formidable": ^2.0.4
-    co-body: ^5.1.1
-    formidable: ^2.0.1
-  checksum: 2fed59a8b91ff107f276e398dbe78cf258f71e7c743946fe9197c0b6b5d3da9ea6516c68a3d13513c32669ccd43971c66d5e80ab0d2932ad1f9aaef627f8f868
-  languageName: node
-  linkType: hard
-
-"koa-body@npm:^6.0.1":
+"koa-body@npm:6.0.1":
   version: 6.0.1
   resolution: "koa-body@npm:6.0.1"
   dependencies:
@@ -21129,38 +21104,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"koa@npm:^2.13.4":
-  version: 2.14.1
-  resolution: "koa@npm:2.14.1"
-  dependencies:
-    accepts: ^1.3.5
-    cache-content-type: ^1.0.0
-    content-disposition: ~0.5.2
-    content-type: ^1.0.4
-    cookies: ~0.8.0
-    debug: ^4.3.2
-    delegates: ^1.0.0
-    depd: ^2.0.0
-    destroy: ^1.0.4
-    encodeurl: ^1.0.2
-    escape-html: ^1.0.3
-    fresh: ~0.5.2
-    http-assert: ^1.3.0
-    http-errors: ^1.6.3
-    is-generator-function: ^1.0.7
-    koa-compose: ^4.1.0
-    koa-convert: ^2.0.0
-    on-finished: ^2.3.0
-    only: ~0.0.2
-    parseurl: ^1.3.2
-    statuses: ^1.5.0
-    type-is: ^1.6.16
-    vary: ^1.1.2
-  checksum: 84cfce48d72cf434831bd9f4f06beb3815da030325a7e89b13ee684f5afd158221e16c2d450ca637b221aa0c4a0ab235edd129e4efea656dc5d8384801d3e90f
-  languageName: node
-  linkType: hard
-
-"koa@npm:^2.14.2":
+"koa@npm:2.14.2":
   version: 2.14.2
   resolution: "koa@npm:2.14.2"
   dependencies:
@@ -21991,12 +21935,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-to-jsx@npm:^7.1.9":
-  version: 7.1.9
-  resolution: "markdown-to-jsx@npm:7.1.9"
+"markdown-to-jsx@npm:^7.3.2":
+  version: 7.3.2
+  resolution: "markdown-to-jsx@npm:7.3.2"
   peerDependencies:
     react: ">= 0.14.0"
-  checksum: 81ab9bd0ad93d4e90c39a67a4df2cc2d3b24579f8f018852f05abce442b246cee9cd705ea9d01304144729a48c972b8b535d40a33e04a0a05d5073958e96ae76
+  checksum: 8885c6343b71570b0a7ec16cd85a49b853a830234790ee7430e2517ea5d8d361ff138bd52147f650790f3e7b3a28a15c755fc16f8856dd01ddf09a6161782e06
   languageName: node
   linkType: hard
 
@@ -24078,7 +24022,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^6.1.0, path-to-regexp@npm:^6.2.1":
+"path-to-regexp@npm:^6.2.1":
   version: 6.2.1
   resolution: "path-to-regexp@npm:6.2.1"
   checksum: f0227af8284ea13300f4293ba111e3635142f976d4197f14d5ad1f124aebd9118783dd2e5f1fe16f7273743cc3dbeddfb7493f237bb27c10fdae07020cc9b698
@@ -24655,25 +24599,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"publicodes-react@npm:^1.0.0-beta.70":
-  version: 1.0.0-beta.70
-  resolution: "publicodes-react@npm:1.0.0-beta.70"
+"publicodes-react@betagouv/publicodes#head=publicodes-in-worker&workspace=publicodes-react&v0":
+  version: 1.0.0-beta.71
+  resolution: "publicodes-react@https://github.com/betagouv/publicodes.git#workspace=publicodes-react&v0=&commit=7f48993c0d3ab97b7375d33ce0d1e1fdbcb123f8"
   dependencies:
-    styled-components: ^5.1.0
+    "@publicodes/worker-react": ^1.0.0-beta.71
+    styled-components: ^5.3.11
   peerDependencies:
     publicodes: ^1.0.0-beta.40
     react: ^17 || ^18
     react-dom: ^17 || ^18
-  checksum: ee995b9781b4ded637ee2f9b9d46f825ce1888818cce48c6de7a83261b80a867f177dbc50627d5e11398e3cd6fc8005dfccdcbff1c3a7de6fcc1205cfc15a8bf
+  checksum: ba7160310beb706434a143f4665db450e1d5c76bd2c06b008717e594c169db89f326feba9be31c00b74f3fe653744f0ae9328b88191684548782b5eaa1b64c00
   languageName: node
   linkType: hard
 
-"publicodes@npm:^1.0.0-beta.70":
-  version: 1.0.0-beta.70
-  resolution: "publicodes@npm:1.0.0-beta.70"
+"publicodes@betagouv/publicodes#head=publicodes-in-worker&workspace=publicodes&v0":
+  version: 1.0.0-beta.71
+  resolution: "publicodes@https://github.com/betagouv/publicodes.git#workspace=publicodes&v0=&commit=7f48993c0d3ab97b7375d33ce0d1e1fdbcb123f8"
   peerDependencies:
     "@types/mocha": ^9.0.0
-  checksum: 0f00247582dc4c3e5cb8dfe0669b19119b2c344c896e03c269f52c244a9fd0be67fee5ba47b3664a464256bc43420eb02ed0d14aafc2e6dab1d950073caa98bb
+  checksum: 1dfacea3530491f425a3204459669f0ed6135e246d8b7889eea3871aaa83accf7965dc7dceddc353d98b608181f0214f1ca7444c22ceb8f5504e3a5f5e6d1aaa
   languageName: node
   linkType: hard
 
@@ -24761,7 +24706,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:^6.11.2, qs@npm:^6.4.0":
+"qs@npm:^6.11.2":
   version: 6.11.2
   resolution: "qs@npm:6.11.2"
   dependencies:
@@ -24881,7 +24826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"raw-body@npm:2.5.2, raw-body@npm:^2.2.0":
+"raw-body@npm:2.5.2":
   version: 2.5.2
   resolution: "raw-body@npm:2.5.2"
   dependencies:
@@ -26866,10 +26811,12 @@ __metadata:
     "@atomik-color/component": ^1.0.17
     "@atomik-color/core": ^1.0.13
     "@axe-core/react": ^4.5.2
+    "@eshaz/web-worker": ^1.2.1
     "@floating-ui/react-dom": ^1.3.0
     "@internationalized/number": ^3.2.0
     "@leeoniya/ufuzzy": ^1.0.2
-    "@publicodes/api": ^1.0.0-beta.70
+    "@publicodes/worker": ^1.0.0-beta.70
+    "@publicodes/worker-react": ^1.0.0-beta.70
     "@react-aria/accordion": ^3.0.0-alpha.17
     "@react-pdf/renderer": ^3.1.6
     "@react-types/accordion": ^3.0.0-alpha.11
@@ -26916,7 +26863,7 @@ __metadata:
     i18next-parser: ^8.3.0
     iframe-resizer: ^4.3.6
     isbot: ^3.6.13
-    markdown-to-jsx: ^7.1.9
+    markdown-to-jsx: ^7.3.2
     modele-social: "workspace:^"
     netlify-cli: ^15.11.0
     publicodes: ^1.0.0-beta.70
@@ -27738,28 +27685,6 @@ __metadata:
     "@tokenizer/token": ^0.3.0
     peek-readable: ^5.0.0
   checksum: 2ebe7ad8f2aea611dec6742cf6a42e82764892a362907f7ce493faf334501bf981ce21c828dcc300457e6d460dc9c34d644ededb3b01dcb9e37559203cf1748c
-  languageName: node
-  linkType: hard
-
-"styled-components@npm:^5.1.0":
-  version: 5.3.6
-  resolution: "styled-components@npm:5.3.6"
-  dependencies:
-    "@babel/helper-module-imports": ^7.0.0
-    "@babel/traverse": ^7.4.5
-    "@emotion/is-prop-valid": ^1.1.0
-    "@emotion/stylis": ^0.8.4
-    "@emotion/unitless": ^0.7.4
-    babel-plugin-styled-components: ">= 1.12.0"
-    css-to-react-native: ^3.0.0
-    hoist-non-react-statics: ^3.0.0
-    shallowequal: ^1.1.0
-    supports-color: ^5.5.0
-  peerDependencies:
-    react: ">= 16.8.0"
-    react-dom: ">= 16.8.0"
-    react-is: ">= 16.8.0"
-  checksum: 68eac1e451be81d66739cf86de8ec9e72f46e7584aa359271761a2437468210bd7cf0a864281fc97dab08c32b35e6bf7513dc8b4104ed6b196cf8d65674dd289
   languageName: node
   linkType: hard
 
@@ -28676,7 +28601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-is@npm:^1.6.14, type-is@npm:^1.6.16, type-is@npm:~1.6.18":
+"type-is@npm:^1.6.16, type-is@npm:~1.6.18":
   version: 1.6.18
   resolution: "type-is@npm:1.6.18"
   dependencies:
@@ -28761,11 +28686,11 @@ __metadata:
 
 "typescript@patch:typescript@^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.4#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>":
   version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=85af82"
+  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 21e88b0a0c0226f9cb9fd25b9626fb05b4c0f3fddac521844a13e1f30beb8f14e90bd409a9ac43c812c5946d714d6e0dee12d5d02dfc1c562c5aacfa1f49b606
+  checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
   languageName: node
   linkType: hard
 

@@ -57,11 +57,23 @@
 		"rimraf": "^3.0.2"
 	},
 	"resolutions": {
+		"@koa/cors": "4.0.0",
+		"@koa/router": "12.0.0",
+		"koa": "2.14.2",
+		"koa-body": "6.0.1",
+		"styled-components": "^5.3.11",
 		"rollup": "^3.10.0",
 		"@types/koa": "^2.13.6",
-		"@types/react": "^18.2.18"
+		"@types/react": "^18.2.18",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"@publicodes/api": "betagouv/publicodes#head=publicodes-in-worker&workspace=@publicodes/api&v0",
+		"publicodes": "betagouv/publicodes#head=publicodes-in-worker&workspace=publicodes&v0",
+		"publicodes-react": "betagouv/publicodes#head=publicodes-in-worker&workspace=publicodes-react&v0",
+		"@publicodes/worker": "betagouv/publicodes#head=publicodes-in-worker&workspace=@publicodes/worker&v0",
+		"@publicodes/worker-react": "betagouv/publicodes#head=publicodes-in-worker&workspace=@publicodes/worker-react&v0"
 	},
-	"packageManager": "yarn@3.5.0",
+	"packageManager": "yarn@3.6.3",
 	"engines": {
 		"node": "^18"
 	}
