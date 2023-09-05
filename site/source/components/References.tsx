@@ -1,3 +1,4 @@
+import { useWorkerEngine } from '@publicodes/worker-react'
 import { DottedName } from 'modele-social'
 import { utils } from 'publicodes'
 import styled from 'styled-components'
@@ -16,7 +17,19 @@ export function References({
 	references?: Record<string, string>
 	dottedName?: DottedName | undefined
 }): JSX.Element | null {
-	const engine = useEngine()
+	return null
+	const workerEngine = useWorkerEngine()
+	const parentRefences = usePromise(async () => {
+		if (!dottedName && !references) {
+			return null
+		}
+		const parentRule = utils.ruleParent(dottedName as string) as DottedName
+		if (!parentRule) {
+			return null
+		}
+
+		return (await workerEngine.asyncGetRule(parentRule)).rawNode.références
+	}, [dottedName, references, workerEngine])
 
 	if (!dottedName && !references) {
 		return null
@@ -33,11 +46,11 @@ export function References({
 	}
 
 	// If no reference, check if parent has some that we could use
-	const parentRule = utils.ruleParent(dottedName as string) as DottedName
-	if (!parentRule) {
-		return null
-	}
-	const parentRefences = engine.getRule(parentRule).rawNode.références
+	// const parentRule = utils.ruleParent(dottedName as string) as DottedName
+	// if (!parentRule) {
+	// 	return null
+	// }
+	// const parentRefences = engine.getRule(parentRule).rawNode.références
 	if (!parentRefences) {
 		return null
 	}
