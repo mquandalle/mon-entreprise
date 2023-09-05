@@ -140,14 +140,9 @@ export default defineConfig(({ command, mode }) => ({
 		/**
 		 * Prevent listed dependencies from being externalized for SSR build cause some
 		 * packages are not esm ready or package.json setup seems wrong, wait this pr to be merge:
-		 * markdown-to-jsx: https://github.com/probablyup/markdown-to-jsx/pull/414
 		 * styled-components: https://github.com/styled-components/styled-components/issues/3601 (wait v6 release)
 		 */
-		noExternal: [
-			/markdown-to-jsx/,
-			/styled-components|emotion/,
-			/publicodes-react/, // use styled-components
-		],
+		noExternal: [/styled-components|emotion/],
 	},
 }))
 
