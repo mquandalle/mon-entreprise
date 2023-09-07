@@ -9,7 +9,7 @@ import {
 } from 'publicodes'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import styled, { keyframes } from 'styled-components'
+import { keyframes, styled } from 'styled-components'
 
 import { usePromise } from '@/hooks/usePromise'
 

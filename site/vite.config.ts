@@ -142,7 +142,7 @@ export default defineConfig(({ command, mode }) => ({
 		 * packages are not esm ready or package.json setup seems wrong, wait this pr to be merge:
 		 * styled-components: https://github.com/styled-components/styled-components/issues/3601 (wait v6 release)
 		 */
-		noExternal: [/styled-components|emotion/],
+		noExternal: [/styled-components|emotion/, /tslib/],
 	},
 }))
 

@@ -2,7 +2,7 @@ import { useWorkerEngine } from '@publicodes/worker-react'
 import { Evaluation } from 'publicodes'
 import { Trans } from 'react-i18next'
 import { useDispatch } from 'react-redux'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import Banner from '@/components/Banner'
 import { Link as DesignSystemLink } from '@/design-system/typography/link'

@@ -13,7 +13,7 @@ import {
 	useLocation,
 	useParams,
 } from 'react-router-dom'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import { References } from '@/components/References'
 import SearchRules from '@/components/search/SearchRules'

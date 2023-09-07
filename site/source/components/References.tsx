@@ -1,7 +1,7 @@
 import { useWorkerEngine } from '@publicodes/worker-react'
 import { DottedName } from 'modele-social'
 import { utils } from 'publicodes'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 // import { useEngine } from '@/components/utils/EngineContext'
 import { Grid } from '@/design-system/layout'

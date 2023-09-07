@@ -1,7 +1,7 @@
 import { useWorkerEngine } from '@publicodes/worker-react'
 import { Evaluation } from 'publicodes'
 import { Trans } from 'react-i18next'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 import Warning from '@/components/ui/WarningBlock'
 import { Link } from '@/design-system/typography/link'

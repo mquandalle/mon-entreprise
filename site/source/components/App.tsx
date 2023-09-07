@@ -19,7 +19,7 @@ import React, {
 } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Route, Routes } from 'react-router-dom'
-import styled, { css } from 'styled-components'
+import { css, styled } from 'styled-components'
 
 import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header'
